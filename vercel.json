@@ -16,12 +16,12 @@
   ],
   "routes": [
     {
-      "src": "/static/(.*)",
+      "src": "bookHubBack//static/(.*)",
       "dest": "/static/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "<projectname>/wsgi.py"
+      "dest": "bookHubBack/backend/wsgi.py"
     }
   ],
   "outputDirectory": "ui/staticfiles"
