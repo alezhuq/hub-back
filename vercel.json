@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "bookHubBack/backend/wsgi.py",
+      "src": "backend/wsgi.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     },
@@ -16,12 +16,12 @@
   ],
   "routes": [
     {
-      "src": "bookHubBack//static/(.*)",
+      "src": "/static/(.*)",
       "dest": "/static/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "bookHubBack/backend/wsgi.py"
+      "dest": "backend/wsgi.py"
     }
   ],
   "outputDirectory": "ui/staticfiles"
