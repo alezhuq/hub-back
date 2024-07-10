@@ -45,6 +45,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://*.run.app:3000",
     "https://*.run.app",
     "https://*.a.run.app",
+    "https://hub-front-fymbxxt4va-uc.a.run.app",
 ]
 SECURE_SSL_REDIRECT = True
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
