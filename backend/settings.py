@@ -34,7 +34,7 @@ ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1", '.run.app', '.now.sh']
     "http://0.0.0.0:8000",
     "https://*.run.app:8000",
     "https://*.run.app:80",
-    "https://book-back-fymbxxt4va-uc.a.run.app",
+    "https://book-back-fymbxxt4va-uc.a.run.app*",
     "https://book-back-fymbxxt4va-uc.a.run.app:80",
     "https://book-back-fymbxxt4va-uc.a.run.app:8000",
     "https://book-back-fymbxxt4va-uc.a.run.app:8080:",
@@ -47,6 +47,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://0.0.0.0:8000",
     "https://*.run.app:80",
     "https://*.run.app:3000",
+    "https://*.run.app:*",
 ]
 
 AUTH_USER_MODEL = "bookhub.User"
